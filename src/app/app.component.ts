@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test7-angular-app';
+  parentColorProperty: string = '';
+
+  receiveData($e) {
+    this.parentColorProperty = $e;
+  }
+
 }
